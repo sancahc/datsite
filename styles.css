@@ -17,15 +17,23 @@ body {
   display: flex-root;
 }
 
-section {
+.sections > section {
   margin: 16px;
   padding: 16px;
-  min-width: 420px;
+  min-width: 350px;
   display: inline-table;
   float: left;
   background: rgba(255,255,255,0.6);
   border-radius: 8px;
   box-shadow: 0px 1px 42px rgba(0,0,0,0.2);
+}
+
+.sections > section > section {
+  padding: 1rem 0;
+}
+
+.sections > section > section:not(:last-child) {
+  border-bottom: 1px solid lightgray;
 }
 
 footer {
